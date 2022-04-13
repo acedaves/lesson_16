@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 16 - Course Winter 2022</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<h2>i'm header</h2>
+		</header>
+		<main class="main">
+			<section class="form">
+				<div class="form__container">
+						<form class="form__area" action="#">
+							<h2 class="form__title">
+								Make an appointment
+							</h2>
+							<div class="form__section">
+								<input required placeholder='Name' autocomplete='off' type='text' name='Username' class='form__input'>
+								<input required placeholder='Email' autocomplete='off' type='email' name='Useremail' class='form__input'>
+								<input required placeholder='Phone Number' autocomplete='off' type='tel' name='Userphone' class='form__input'>
+								<input required list='select' placeholder='Select Service' autocomplete='off' type='text' name='Userselect' class='form__input'>
+								<datalist id="select">
+									<option value="Pet Boarding">(No Cages)</option>
+									<option value="Pet Day Spa & Grooming"></option>
+									<option value="Custom Meal Plans"></option>
+									<option value="Pet Training"></option>
+									<option value="Shop Our Store!"></option>
+								</datalist>
+								<textarea placeholder="Tell us about your puppers include his/her name" name="Usertext" class="form__textarea"></textarea>
+							</div>
+							<button type="submit" class="form__button">Make an Appointment</button>
+						</form>
+				</div>
+			</section>
+			<section class="summary">
+				<div class="summary__container">
+					<form action="#" class="summary__form">
+						<div class="summary__box">
+							<div class="summary__title">
+								<h2 class="summary__main">Summary</h2>
+								<select class="summary__shipping-select" name="Shipping and Tax" id="shipping-and-tax">
+									<option value="estimate">Estimate Shipping and Tax</option>
+								</select>
+								<label class="summary__shipping-label" for="shipping-and-tax">
+									Enter your destination to get a shipping<br> estimate.
+								</label>
+							</div>
+							<label for="selected-country" class="summary__label">Country</label>
+							<select class='summary__input' name="Country" id="selected-country">
+								<option value="Country">Australia</option>
+								<option selected value="Country">Ukraine</option>
+								<option value="Country">Poland</option>
+								<option value="Country">America</option>
+								<option value="Country">England</option>
+								<option value="Country">China</option>
+								<option value="Country">Japan</option>
+							</select>
+							<label for="selected-state" class="summary__label">State/Province</label>
+							<input required autocomplete='off' class='summary__input' id='selected-state' type='text' name='State/Province'>
+							<label for="selected-zip" class="summary__label">Zip/Postal Code</label>
+							<input required autocomplete='off' class='summary__input' id='selected-zip' type='text' name='Zip/Postal Code'>
+							<p class="summary__standart-rate">Standard Rate</p>
+							<div class="summary__radio-box">
+								<input checked required class='summary__radio-button' id='selected-rate' type='radio' name='Standard Rate'>
+								<label for="selected-rate" class="summary__radio-label">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+							</div>
+							<p class="summary__standart-rate">Pickup from store</p>
+							<div class="summary__radio-box">
+								<input required class='summary__radio-button' id='selected-rate-two' type='radio' name='Standard Rate'>
+								<label for="selected-rate-two" class="summary__radio-label">1234 Street Adress City Address, 1234 $0.00</label>
+							</div>
+							<select class="summary__shipping-select" name="Discount Code" id="discount-code">
+								<option value="estimate">Apply Discount Code</option>
+							</select>
+							<label for="enter-discount" class="summary__label">Enter discount code</label>
+							<input required placeholder="Enter Discount code" autocomplete='off' class='summary__input' id='enter-discount' type='text' name='Enter discount code'>
+							<button type="submit" class="summary__button">Apply Discount</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="registered">
+				<div class="registered__container">
+					<div class="registered__form">
+							<h2 class="registered__main">
+								Registered Customers
+							</h2>
+							<p class="registered__sub">
+								If you have an account, sign in with your email address.
+							</p>
+							<form action="#">
+								<div class="registered__box">
+									<label for="email-registered" class="registered__label">Email</label>
+									<input required autocomplete='off' placeholder="Your Name" class='registered__input' id='email-registered' type='text' name='Email'>
+									<label for="password-registered" class="registered__label">Password</label>
+									<input required autocomplete='off' placeholder="Your Name" class='registered__input' id='password-registered' type='password' name='Email'>
+								</div>
+									<button type="submit" class="registered__sign-in">Sign In</button>
+									<button type="submit" class="registered__forgot-password">Forgot Your Password?</button>
+							</form>
+					</div>
+				</div>
+			</section>
+			<section class="drop">
+				<div class="drop__container">
+					<div class="drop__image">
+						<img src="img/illustration.svg" alt="illustration">
+					</div>
+					<div class="drop__box">
+						<h2 class="drop__title">Any questions?</h2>
+						<div class="drop__sub">Drop us a line</div>
+						<form class="drop__form">
+							<div class=drop__column>
+								<label for="first-name" class="drop__label">First Name*</label>
+								<input required autocomplete='off' class='drop__input' id='first-name' placeholder='Your first name' type='text' name='First Name'>
+							</div>
+						<div class="drop__column">
+								<label for="last-name" class="drop__label">Last Name*</label>
+								<input required autocomplete='off' class='drop__input' id='last-name' placeholder='Your last name' type='text' name='Last Name'>
+						</div>
+						<div class="drop__column">
+								<label for="email-drop" class="drop__label">Email*</label>
+								<input required autocomplete='off' class='drop__input' id='email-drop' placeholder='Your working email' type='email' name='Email'>
+						</div>
+							<div class="drop__column">
+								<label for="phone-drop" class="drop__label">Phone</label>
+								<input required autocomplete='off' class='drop__input' id='phone-drop' placeholder='Your phone number' type='tel' name='Phone number'>
+							</div>
+							<label for="message-drop" class="drop__label">Message*</label>
+							<textarea autocomplete='off' class='drop__textarea' id='message-drop' name='User message'>
+							</textarea>
+							<div class="drop__checkbox">
+								<input checked class="drop__check" id="agree" required name="Check" type="checkbox">
+								<label for="agree" class="drop__label-check">I agree to receive communications from Createx Online School</label>
+								<button type="submit" class="drop__button">Send message</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<h6>i'm footer</h6>
+		</footer>
+	</div>
+</body>
+
+</html>
